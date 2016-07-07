@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "socks_tunnel/cli"
+
+SocksTunnel::CLI.start(ARGV)
