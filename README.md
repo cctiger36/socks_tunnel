@@ -30,6 +30,9 @@ Options
   <tr>
     <td>--salt</td><td>The salt for generating encryption key and iv.</td><td>Optional</td>
   </tr>
+  <tr>
+    <td>--daemon</td><td>Run in the background.</td><td>Optional</td>
+  </tr>
 </table>
 
 Start remote server
@@ -47,6 +50,9 @@ Options
   </tr>
   <tr>
     <td>--salt</td><td>The salt for generating encryption key and iv.</td><td>Optional</td>
+  </tr>
+  <tr>
+    <td>--daemon</td><td>Run in the background.</td><td>Optional</td>
   </tr>
 </table>
 

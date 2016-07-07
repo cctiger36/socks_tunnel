@@ -6,6 +6,7 @@ module SocksTunnel
       EventMachine.run do
         puts "Start local server at #{Config.local_server_host}:#{Config.local_server_port}"
         EventMachine.start_server(Config.local_server_host, Config.local_server_port, Server)
+        Process.daemon if Config.daemon?
       end
     end
 

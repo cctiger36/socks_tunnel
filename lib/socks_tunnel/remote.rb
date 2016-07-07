@@ -4,6 +4,7 @@ module SocksTunnel
       EventMachine.run do
         puts "Start remote server at 0.0.0.0:#{Config.remote_server_port}"
         EventMachine.start_server('0.0.0.0', Config.remote_server_port, Server)
+        Process.daemon if Config.daemon?
       end
     end
 

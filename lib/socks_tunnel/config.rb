@@ -2,7 +2,7 @@ module SocksTunnel
   class Config
     class << self
       attr_accessor :local_server_host, :local_server_port,
-        :remote_server_host, :remote_server_port, :password, :salt
+        :remote_server_host, :remote_server_port, :password, :salt, :daemon
 
       def from(options)
         if options[:remote_addr]
@@ -14,6 +14,7 @@ module SocksTunnel
         end
         @password = options[:password]
         @salt = options[:salt] if options[:salt]
+        @daemon = options[:daemon] if options[:daemon]
       end
 
       def local_server_host
@@ -30,6 +31,10 @@ module SocksTunnel
 
       def cipher
         @cipher ||= 'AES-256-CBC'
+      end
+
+      def daemon?
+        !!@daemon
       end
     end
   end
