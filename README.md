@@ -1,6 +1,6 @@
 # SocksTunnel
 
-Establish secure tunnel via Socks 5. Currently support TCP only.
+Establish secure tunnel via Socks 5 base on EventMachine. Recently support TCP only.
 
 ## Installation
 
