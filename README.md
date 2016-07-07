@@ -1,6 +1,6 @@
 # SocksTunnel
 
-Establish secure tunnel via Socks 5.
+Establish secure tunnel via Socks 5. Currently support TCP only.
 
 ## Installation
 
