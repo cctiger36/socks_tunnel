@@ -1,5 +1,7 @@
 # SocksTunnel
 
+[![Build Status](https://travis-ci.org/cctiger36/socks_tunnel.svg?branch=master)](https://travis-ci.org/cctiger36/socks_tunnel)
+
 Establish secure tunnel via Socks 5 base on EventMachine. Recently support TCP only.
 
 ## Installation
