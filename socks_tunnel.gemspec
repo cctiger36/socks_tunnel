@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["cctiger36@gmail.com"]
 
   spec.summary       = %q{Establish secure tunnel via Socks 5.}
-  spec.description   = %q{Establish secure tunnel via Socks 5.}
+  spec.description   = %q{Establish secure tunnel via Socks 5. Dependents on EventMachine and ruby Fiber.}
   spec.homepage      = "https://github.com/cctiger36/socks_tunnel"
   spec.license       = "MIT"
 
